@@ -1,5 +1,5 @@
 import React from "react";
-import profileIcon from "../assets/icon_fariq.png";
+import profileIcon from "../assets/icon_fariq.svg";
 
 const Header: React.FC = () => {
   return (
