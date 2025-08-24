@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// TypeScript infers the type of the root element automatically, but it's good practice to specify that the element exists.
+const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement); // Type assertion to HTMLElement
+
 root.render(
   <React.StrictMode>
     <App />
