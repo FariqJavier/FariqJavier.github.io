@@ -18,7 +18,7 @@ const Header: React.FC = () => {
             <li><a href="#projects" className="hover:text-gray-800 font-semibold">Projects</a></li>
             <li><a href="#skills" className="hover:text-gray-800 font-semibold">Skills</a></li>
             <li><a href="#certifications" className="hover:text-gray-800 font-semibold">Certifications</a></li>
-            <li><a href="#contact" className="hover:text-gray-800 font-semibold">Profile</a></li>
+            <li><a href="#contact" className="hover:text-gray-800 font-semibold">Contact</a></li>
           </ul>
         </nav>
       </div>
