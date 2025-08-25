@@ -1,11 +1,11 @@
 import React from "react";
-import profileIcon from "../assets/icon_fariq.svg";
 
 const Profile: React.FC = () => {
     const profileData = {
         name: "Fariq Javier Nugraha",
         description: "A Computer Engineering graduate 2025 from Sepuluh Nopember Institute of Technology with a focus on innovative AI/ML/Robotics applications.",
         profileTags: ["Computer Engineering Graduate", "AI/Robotics Enthusiast", "Software Engineer"],
+        profileIconUrl: "https://drive.google.com/uc?export=view&id=1NJJ0B7LWlDLzodtW4BvBBmOfNMSsR6wi",
         linkedInUrl: "https://www.linkedin.com/in/fariqjavier/",
         resumeUrl: "https://drive.google.com/uc?export=download&id=1356Aa_6VKJRGGNpUa2PtKLQImGGe0KZM"
     };
@@ -15,7 +15,7 @@ const Profile: React.FC = () => {
             <div className="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between">
                 <div className="flex justify-end lg:w-1/3 mb-8 lg:mb-0">
                     <img
-                        src={profileIcon}
+                        src={profileData.profileIconUrl}
                         alt="Profile Icon"
                         className="rounded-full w-32 h-32 mt-2"
                     />
