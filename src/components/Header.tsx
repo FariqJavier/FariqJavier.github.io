@@ -1,17 +1,25 @@
 import React from "react";
-import profileIcon from "../assets/icon_fariq.svg";
 
 const Header: React.FC = () => {
+  const profileData = {
+    name: "Fariq Javier Nugraha",
+    nickname: "Fariq",
+    title: "Software Engineer",
+    email: "fariqjavier@gmail.com",
+    phone: "+6281908279388",
+    profileIconUrl: "https://drive.google.com/uc?export=view&id=1NJJ0B7LWlDLzodtW4BvBBmOfNMSsR6wi"
+  };
+
   return (
     <header className="bg-white text-black p-4">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <img
-            src={profileIcon}
-            alt="Fariq Javier"
+            src={profileData.profileIconUrl}
+            alt="Profile Icon"
             className="w-10 h-10 rounded-full"
           />
-          <h1 className="text-xl font-bold">Fariq Javier's Portfolio</h1>
+          <h1 className="text-xl font-bold">{profileData.nickname}'s Portfolio</h1>
         </div>
         <nav>
           <ul className="flex space-x-6">
