@@ -1,4 +1,4 @@
-import React, { useState, useEffect, act } from "react";
+import React, { useState, useEffect } from "react";
 
 interface ProjectProps {
   title: string;
@@ -16,14 +16,14 @@ interface ProjectProps {
 const ProjectCard: React.FC<ProjectProps> = ({ title, description, tags, detailedDescription, imageUrl, situationDescription, taskDescription, actionDescription, resultDescription, onClick }) => {
   return (
     <div
-      className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all flex-shrink-0 w-1/2 lg:w-1/4 cursor-pointer"
+      className="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl transition-all flex-shrink-0 justify-between w-1/2 lg:w-1/4 cursor-pointer"
       onClick={onClick}
     >
-      <h3 className="text-2xl font-semibold">{title}</h3>
-      <p className="text-gray-600 mt-2">{description}</p>
+      <h3 className="text-xl font-semibold line-clamp-2">{title}</h3>
+      <p className="text-gray-600 mt-2 line-clamp-4">{description}</p>
       <div className="mt-4 flex flex-wrap gap-2">
         {tags.map((tag, index) => (
-          <span key={index} className="bg-gray-200 text-gray-800 py-1 px-3 rounded-full">{tag}</span>
+          <span key={index} className="bg-gray-200 text-gray-800 py-1 px-3 rounded-full text-sm">{tag}</span>
         ))}
       </div>
     </div>
