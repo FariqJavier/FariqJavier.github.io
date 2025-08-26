@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+interface ProfileProps {
+    name: string;
+    description: string;
+    profileTags: string[];
+    profileIconUrl: string;
+    linkedInUrl: string;
+    resumeUrl: string;
+}
 
 const Profile: React.FC = () => {
-    const profileData = {
-        name: "Fariq Javier Nugraha",
-        description: "A Computer Engineering graduate 2025 from Sepuluh Nopember Institute of Technology with a focus on innovative AI/ML/Robotics applications.",
-        profileTags: ["Computer Engineering Graduate", "AI/Robotics Enthusiast", "Software Engineer"],
-        profileIconUrl: "https://drive.google.com/uc?export=view&id=1NJJ0B7LWlDLzodtW4BvBBmOfNMSsR6wi",
-        linkedInUrl: "https://www.linkedin.com/in/fariqjavier/",
-        resumeUrl: "https://drive.google.com/uc?export=download&id=1356Aa_6VKJRGGNpUa2PtKLQImGGe0KZM"
-    };
+    const [profileData, setProfile] = useState<ProfileProps | null>(null);
+
+    useEffect(() => {
+        fetch("/assets/portfolio_profile_data.json")
+        .then((res) => res.json())
+        .then((data) => {
+            // Pick only what you need
+            const { name, description, profileTags, profileIconUrl, linkedInUrl, resumeUrl } = data;
+            setProfile({ name, description, profileTags, profileIconUrl, linkedInUrl, resumeUrl });
+        })
+        .catch((err) => console.error("Error loading profile data:", err));
+    }, []);
+
+    if (!profileData) return <p>Loading...</p>;
 
     return (
         <section className="bg-white text-black py-16" id="profile">
