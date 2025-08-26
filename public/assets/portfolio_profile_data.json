@@ -20,7 +20,7 @@
             "taskDescription": "The task was to develop a perception system that could effectively improve the UR5's ability to understand and interact with the target object.",
             "actionDescription": "Implemented a pipeline that captures target object visual data from cameras and linguistic data from user commands, processing them through the OVGNet model, and calculate the target object's position and orientation relative to robot.",
             "resultDescription": "The result was a perception system that could generate the target object position and orientation based on visual and linguistic context. This output was then used to inform the UR5's actions during the Pick-and-Place task.",
-            "imageUrl": "https://example.com/image1.jpg",
+            "imageUrl": "/assets/portfolio_project_ta_persepsi.png",
             "projectUrl": "https://github.com/FariqJavier/UR-OVGNet-ROS"
         },
         {
@@ -32,7 +32,7 @@
             "taskDescription": "The task was to integrate the visual-linguistic perception system with the UR5 robotic arm to perform Pick-and-Place motion to the target object automatically.",
             "actionDescription": "Integrated the perception system with the UR5's control architecture, generating the best robot grasping pose based on the target object position and orientation, allowing for seamless Pick-and-Place operations.",
             "resultDescription": "The result was a more intuitive human-robot interaction model, where users could command the UR5 to perform Pick-and-Place actions to target objects using natural language commands and visual cues.",
-            "imageUrl": "https://example.com/image2.jpg",
+            "imageUrl": "/assets/portfolio_project_ta_motion.png",
             "projectUrl": "https://github.com/FariqJavier/UR5-Pick-and-Place-using-OVGNet"
         },
         {
@@ -44,7 +44,7 @@
             "taskDescription": "The task was to develop a web interface that could facilitate user interaction with the perception system, allowing for both text and speech inputs.",
             "actionDescription": "Developed a responsive web interface using React and Python backend that supports text and speech interactions, enabling users to easily communicate with the perception system.",
             "resultDescription": "The result was a user-friendly web interface that allowed for seamless text and speech interaction with the visual-linguistic perception system.",
-            "imageUrl": "https://example.com/image3.jpg",
+            "imageUrl": "/assets/portfolio_project_ta_web.png",
             "projectUrl": "https://github.com/FariqJavier/UR5-OVGNet-Web-Frontend"
         },
         {
@@ -56,7 +56,7 @@
             "taskDescription": "The task was to develop the back-end services that would support the location tracking and notification features of the DemiWatch application.",
             "actionDescription": "Implemented RESTful APIs using Node.js and Express to manage user data, location updates, and caregiver notifications.",
             "resultDescription": "The result was a reliable back-end system that enabled real-time location tracking and communication between dementia patients and their caregivers.",
-            "imageUrl": "https://example.com/image4.jpg",
+            "imageUrl": "/assets/portfolio_project_demiwatch.png",
             "projectUrl": "https://github.com/FariqJavier/DemiWatch-Ver.-2-Back-End"
         },
         {
@@ -68,7 +68,7 @@
             "taskDescription": "The task was to implement a computer vision system that could detect and classify playing cards in real-time.",
             "actionDescription": "Developed a computer vision system using OpenCV to detect the cards placed on the table, then Keras library could created a CNN machine learning model to classify the playing cards in real-time.",
             "resultDescription": "The result was a fully functional Crazy Eight card game that could accurately detect and classify playing cards using computer vision and CNN.",
-            "imageUrl": "https://example.com/image5.jpg",
+            "imageUrl": "/assets/portfolio_project_game.png",
             "projectUrl": "https://github.com/FariqJavier/Crazy-Eight-Playing-Card-Game-Using-Computer-Vision-and-CNN"
         },
         {
@@ -80,7 +80,7 @@
             "taskDescription": "The task was to integrate OCR and NLP machine learning models into the EKSPENSI mobile application to enhance its expense tracking and management capabilities.",
             "actionDescription": "Deployed OCR model compatible for the mobile application to extract text from scanned receipts and documents on the smartphone, and then deployed NLP model for the Cloud Back-End to categorize and analyze the expenses data then store it on the database.",
             "resultDescription": "The result was a more efficient expense tracking process, allowing users to easily scan and categorize their expenses without manual input.",
-            "imageUrl": "https://example.com/image6.jpg",
+            "imageUrl": "/assets/portfolio_project_ekspensi.png",
             "projectUrl": "https://github.com/FariqJavier/Integrate-NLP-Model-with-BackEnd"
         },
         {
@@ -92,7 +92,7 @@
             "taskDescription": "The task was to develop new features such as a product rating and review system, filtering options based on user ratings, and dedicated sections for best-selling and new arrival products.",
             "actionDescription": "Utilized Vue.js and Nuxt.js to build the Front-End components and Tailwind CSS was used for styling and layout for both of the target features, then connected the Front-End with the new Back-End API services created for these features, and implemented the necessary logic for data fetching and state management.",
             "resultDescription": "The result was a fully functional and visually appealing front-end for the new features, providing users with an enhanced shopping experience.",
-            "imageUrl": "https://example.com/image7.jpg",
+            "imageUrl": "/assets/portfolio_project_speed_fe.png",
             "projectUrl": "https://github.com/molca-id/e-commerce-fe-admin"
         },
         {
@@ -104,7 +104,7 @@
             "taskDescription": "The task was to develop the back-end API endpoints to handle product reviews, ratings, and filtering based on user preferences and store them to the existing database.",
             "actionDescription": "Implemented RESTful API endpoints using Node.js and Express, with MySQL as the database to store product information, reviews, and user data, then ensured proper authentication and authorization mechanisms were in place, and integrated the new features with the existing system.",
             "resultDescription": "The result was a secure and efficient back-end system that seamlessly integrated with the front-end, providing the necessary data and functionality for the new features.",
-            "imageUrl": "https://example.com/image4.jpg",
+            "imageUrl": "/assets/portfolio_project_speed_be.png",
             "projectUrl": "https://github.com/molca-id/e-commerce-api"
         },
         {
@@ -116,7 +116,7 @@
             "taskDescription": "The task was to develop the firmware for the ESP32 to read data from the sensors and publish it to an MQTT broker.",
             "actionDescription": "Developed the firmware for the ESP32 using C++ to collect the data from various sensors (temperature, gas, and rain) then published the data to an MQTT broker and visualize the collected sensor data through a web dashboard, Node-Red.",
             "resultDescription": "The result was a functional IoT system capable of real-time data monitoring and reporting from temperature, gas, and rain sensors that could be used to check the weather signs.",
-            "imageUrl": "https://example.com/image5.jpg",
+            "imageUrl": "/assets/portfolio_project_cuaca.jpg",
             "projectUrl": "https://github.com/FariqJavier/Pendeteksi-Cuaca"
         }
     ],
