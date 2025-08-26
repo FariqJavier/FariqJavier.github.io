@@ -14,6 +14,7 @@ interface DetailedProjectProps extends ProjectProps {
   actionDescription: string;
   resultDescription: string;
   imageUrl: string;
+  projectUrl?: string;
 }
 
 interface ProjectsData {
@@ -38,9 +39,19 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, tags, onClick
 };
 
 const Modal: React.FC<{ project: DetailedProjectProps; onClose: () => void }> = ({ project, onClose }) => {
+  const handleContentClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
+
   return (
-    <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white p-8 rounded-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto">
+    <div 
+      className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50"
+      onClick={onClose} // click on backdrop closes modal
+    >
+      <div 
+        className="bg-white p-8 rounded-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto"
+        onClick={handleContentClick} // prevent backdrop close
+      >
         <button onClick={onClose} className="absolute top-4 right-6 text-2xl font-extrabold text-gray-200">X</button>
         <img src={project.imageUrl} alt={project.title} className="w-full mt-4 rounded-lg" />
         <h2 className="text-3xl text-justify font-semibold">{project.title}</h2>
@@ -63,6 +74,15 @@ const Modal: React.FC<{ project: DetailedProjectProps; onClose: () => void }> = 
           <h4 className="text-md font-bold">Result:</h4>
           <p className="text-md text-gray-700">{project.resultDescription}</p>
         </div>
+        {project.projectUrl && (
+          <a
+            href={project.projectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="mt-6 w-full h-8 bg-black text-white font-semibold text-sm rounded-lg hover:bg-gray-800">View on GitHub</button>
+          </a>
+        )}
       </div>
     </div>
   );
