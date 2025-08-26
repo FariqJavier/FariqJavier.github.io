@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
+interface ProfileProps {
+  nickname: string;
+  profileIconUrl: string;
+}
 
 const Header: React.FC = () => {
-  const profileData = {
-    name: "Fariq Javier Nugraha",
-    nickname: "Fariq",
-    title: "Software Engineer",
-    email: "fariqjavier@gmail.com",
-    phone: "+6281908279388",
-    profileIconUrl: "https://drive.google.com/uc?export=view&id=1NJJ0B7LWlDLzodtW4BvBBmOfNMSsR6wi"
-  };
+  const [profileData, setProfile] = useState<ProfileProps | null>(null);
+  
+      useEffect(() => {
+          fetch("/assets/portfolio_profile_data.json")
+          .then((res) => res.json())
+          .then((data) => {
+              // Pick only what you need
+              const { nickname, profileIconUrl } = data;
+              setProfile({ nickname, profileIconUrl });
+          })
+          .catch((err) => console.error("Error loading profile data:", err));
+      }, []);
+  
+      if (!profileData) return <p>Loading...</p>;
 
   return (
     <header className="bg-white text-black p-4">
