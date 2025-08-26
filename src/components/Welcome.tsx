@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { InstagramIcon, GithubIcon, LinkedinIcon } from "lucide-react";
 
 interface ContactProps {
     linkedInUrl: string;
@@ -64,7 +64,7 @@ const Welcome: React.FC = () => {
                       onClick={() => setIsOpen(false)}
                       className="flex items-center px-4 py-2 hover:bg-gray-100"
                     >
-                      <FaLinkedin className="mr-2 text-blue-600" /> LinkedIn
+                      <LinkedinIcon className="mr-4 text-blue-600" /> LinkedIn
                     </a>
                   </li>
                   <li>
@@ -75,7 +75,7 @@ const Welcome: React.FC = () => {
                       onClick={() => setIsOpen(false)}
                       className="flex items-center px-4 py-2 hover:bg-gray-100"
                     >
-                      <FaInstagram className="mr-2 text-pink-500" /> Instagram
+                      <InstagramIcon className="mr-4 text-pink-500" /> Instagram
                     </a>
                   </li>
                   <li>
@@ -86,7 +86,7 @@ const Welcome: React.FC = () => {
                       onClick={() => setIsOpen(false)}
                       className="flex items-center px-4 py-2 hover:bg-gray-100"
                     >
-                      <FaGithub className="mr-2 text-gray-800" /> GitHub
+                      <GithubIcon className="mr-4 text-gray-800" /> GitHub
                     </a>
                   </li>
                 </ul>
