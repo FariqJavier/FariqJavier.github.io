@@ -10,8 +10,9 @@ const ChatBot: React.FC = () => {
 
   // Show greeting only on first open
   useEffect(() => {
-    if (isOpen && messages.length === 0) {
+    if (isOpen) {
       setMessages([{ sender: "bot", text: "Hi there, how can I help you ?" }]);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }
   }, [isOpen]);
 
