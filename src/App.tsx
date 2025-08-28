@@ -5,6 +5,7 @@ import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
 import Skills from "./components/Skills";
+import ChatBot from "./components/ChatBot";
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
       <Projects />
       <Certifications />
       <Skills />
+      <ChatBot />
     </div>
   );
 };
