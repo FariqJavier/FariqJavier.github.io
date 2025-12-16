@@ -37,17 +37,17 @@ const SkillCard: React.FC<SkillProps> = ({ skill, proficiency }) => {
 
 const Skills: React.FC = () => {
   const skillsData = [
-    { skill: "Python", proficiency: "90%" },
-    { skill: "Javascript", proficiency: "85%" },
+    // { skill: "Python", proficiency: "90%" },
+    // { skill: "Javascript", proficiency: "85%" },
     { skill: "Robotics", proficiency: "85%" },
     { skill: "Machine Learning", proficiency: "90%" },
-    { skill: "Docker", proficiency: "80%" },
-    { skill: "Computer Vision", proficiency: "75%" },
+    // { skill: "Docker", proficiency: "80%" },
+    // { skill: "Computer Vision", proficiency: "75%" },
     { skill: "Web Development", proficiency: "80%" },
     { skill: "Internet of Things", proficiency: "70%" },
     { skill: "Data Analysis", proficiency: "75%" },
     { skill: "Project Management", proficiency: "80%" },
-    { skill: "SDLC", proficiency: "75%" }
+    // { skill: "SDLC", proficiency: "75%" }
   ];
 
   return (
