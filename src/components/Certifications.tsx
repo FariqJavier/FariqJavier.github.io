@@ -22,10 +22,12 @@ const CertificationCard: React.FC<CertificationProps> = ({ name, issuer, issuedD
 
 const Certifications: React.FC = () => {
   const certificationsData = [
+    { name: "Oracle Data Science Professional Certification", issuer: "Oracle", issuedDate: "Sep 2025 - Present", certificateUrl: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=1569EF1CA3EE22D9F268B311DFEE1BBD924E4B4D5FCA5F4F33210B26DA1D4959" },
+    { name: "Google Project Management Professional Certification", issuer: "Google", issuedDate: "Sep 2025 - Present", certificateUrl: "https://www.coursera.org/account/accomplishments/specialization/EKFYJF0FYGAK" },
+    { name: "Code Generation and Optimization Using IBM Granite Certification", issuer: "IBM", issuedDate: "Aug 2025 - Present", certificateUrl: "https://www.credly.com/badges/9fb0bb06-d427-49a6-bae5-596aa7cc1c0c/linked_in_profile" },
     { name: "Google Data Analytics Professional Certification", issuer: "Google", issuedDate: "Mar 2024 - Present", certificateUrl: "https://www.coursera.org/account/accomplishments/specialization/9BXC6P6HF392" },
     { name: "Machine Learning Specialization Certification", issuer: "Stanford University and DeepLearning.AI", issuedDate: "Apr 2024 - Present", certificateUrl: "https://www.coursera.org/account/accomplishments/specialization/SK7N3J57D3CK" },
     { name: "DeepLearning.AI TensorFlow Developer Professional Certification", issuer: "DeepLearning.AI", issuedDate: "May 2024 - Present", certificateUrl: "https://www.coursera.org/account/accomplishments/specialization/Q7CN35PBQTA4" },
-    { name: "Code Generation and Optimization Using IBM Granite Certification", issuer: "IBM", issuedDate: "Aug 2025 - Present", certificateUrl: "https://www.credly.com/badges/9fb0bb06-d427-49a6-bae5-596aa7cc1c0c/linked_in_profile" },
     { name: "TEFL Certification: 517", issuer: "Sepuluh Nopember Institute of Technology Global Center", issuedDate: "Aug 2021 - Aug 2023", certificateUrl: "https://drive.google.com/uc?export=view&id=12JLCnmkzLbqMNqaEFEjyNEtsqoW2ITD6" }
   ];
 
